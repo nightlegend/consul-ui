@@ -7,6 +7,6 @@ WORKDIR /app/consul-ui
 COPY . /app/consul-ui
 
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org && \
-    cnpm install
+	cnpm install
 
 EXPOSE 8088 
