@@ -1,12 +1,7 @@
-FROM intdocker.cargosmart.com/os/node:8.3.0
-
-RUN mkdir -p /app/consul-ui
+FROM docker.cargosmart.com/app/consul-ui:1.0.0
 
 WORKDIR /app/consul-ui
 
 COPY . /app/consul-ui
-
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org && \
-	cnpm install
 
 EXPOSE 8088 
